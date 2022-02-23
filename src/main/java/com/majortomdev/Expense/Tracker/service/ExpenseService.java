@@ -7,4 +7,6 @@ import com.majortomdev.Expense.Tracker.model.Expense;
 public interface ExpenseService {
 
 	List<Expense> findAll();
+	
+	Expense save(Expense expense);
 }
