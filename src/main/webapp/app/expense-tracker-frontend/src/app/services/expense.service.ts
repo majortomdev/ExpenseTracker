@@ -20,4 +20,11 @@ export class ExpenseService {
       map((response: any) => response)
     )
   }
+
+  saveExpense(expense: Expense): Observable<Expense> {
+    return this._httpClient.post<Expense>(this.getUrl, expense);
+  }
+
+
+
 }
