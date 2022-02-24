@@ -25,6 +25,10 @@ export class ExpenseService {
     return this._httpClient.post<Expense>(this.getUrl, expense);
   }
 
-
+  getExpense(id: number): Observable<Expense> {
+    return this._httpClient.get<Expense>(`${this.getUrl}/${id}`).pipe(
+      map(response => response)
+    )
+  }
 
 }

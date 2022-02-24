@@ -12,6 +12,7 @@ import { AddExpenseComponent } from './components/add-expense/add-expense.compon
 const routers: Routes = [
   {path: 'expenses', component: ListExpenseComponent},
   {path: 'addexpense', component: AddExpenseComponent},
+  {path: 'editexpense/:id', component: AddExpenseComponent},
   {path: '', redirectTo: '/expenses', pathMatch: 'full'}
 ];
 @NgModule({
